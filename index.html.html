@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skeleton Academy | CS2 Pro Coaching</title>
+    <style>
+        :root {
+            --primary: #00d2ff;
+            --secondary: #3a7bd5;
+            --dark: #121212;
+            --card: #1e1e1e;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--dark);
+            color: white;
+            margin: 0;
+            line-height: 1.6;
+        }
+
+        nav {
+            background: rgba(0, 0, 0, 0.8);
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 2px solid var(--primary);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: var(--primary);
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        .hero {
+            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://images.unsplash.com/photo-1542751371-adc38448a05e?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+            background-size: cover;
+            height: 400px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        .btn-main {
+            background: linear-gradient(to right, var(--primary), var(--secondary));
+            color: white;
+            padding: 15px 30px;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: bold;
+            transition: 0.3s;
+            margin-top: 20px;
+        }
+
+        .btn-main:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 20px rgba(0, 210, 255, 0.5);
+        }
+
+        .course-container {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            padding: 50px;
+            flex-wrap: wrap;
+        }
+
+        .course-card {
+            background: var(--card);
+            border-radius: 15px;
+            width: 300px;
+            padding: 20px;
+            border: 1px solid #333;
+            transition: 0.3s;
+        }
+
+        .course-card:hover {
+            border-color: var(--primary);
+        }
+
+        .price {
+            font-size: 28px;
+            color: var(--primary);
+            font-weight: bold;
+        }
+
+        footer {
+            text-align: center;
+            padding: 40px;
+            background: #0a0a0a;
+            font-size: 0.9em;
+            color: #666;
+        }
+
+        .google-link {
+            color: #aaa;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+<nav>
+    <div class="logo">Skeleton Academy</div>
+    <div>
+        <a href="https://www.google.dk" target="_blank" class="google-link">Søg på Google</a>
+    </div>
+</nav>
+
+<div class="hero">
+    <h1>BLIV DEN NÆSTE CS2 PRO</h1>
+    <p>Træn med de bedste. Ingen snyd – kun talent.</p>
+    <a href="#courses" class="btn-main">SE KURSER</a>
+</div>
+
+<div class="course-container" id="courses">
+    <div class="course-card">
+        <h3>Aim Masterclass</h3>
+        <p>Lær pre-aiming, recoil control og flick shots på rekordtid.</p>
+        <p class="price">199 DKK</p>
+        <a href="#" class="btn-main" style="padding: 10px 20px;">KØB NU</a>
+    </div>
+
+    <div class="course-card">
+        <h3>Game Sense & Utility</h3>
+        <p>De bedste smokes og hvordan du læser dine modstandere.</p>
+        <p class="price">249 DKK</p>
+        <a href="#" class="btn-main" style="padding: 10px 20px;">KØB NU</a>
+    </div>
+
+    <div class="course-card">
+        <h3>1-til-1 Coaching</h3>
+        <p>60 minutters personlig træning med en Faceit Level 10 coach.</p>
+        <p class="price">499 DKK</p>
+        <a href="#" class="btn-main" style="padding: 10px 20px;">BOOK TID</a>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2024 Skeleton Academy - En del af CS2 Skoleprojektet</p>
+    <p>Har du brug for hjælp? <a href="https://www.google.dk/search?q=cs2+tips+and+tricks" target="_blank" style="color: #666;">Find svar her</a></p>
+</footer>
+
+</body>
+</html>
